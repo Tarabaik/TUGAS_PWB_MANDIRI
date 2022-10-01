@@ -1,0 +1,59 @@
+/* for root element */
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-color: rgb(0, 0, 0);
+    color: whitesmoke;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+}
+a {
+    color: white;
+    text-decoration: none;
+}
+li {
+    list-style-type: none;
+}
+
+/* navbar */
+nav {
+    margin-top: 1em;
+}
+nav ul li{
+    margin-right: 20px;    
+}
+nav ul,#nav_conten {
+    display: flex; 
+    flex-direction: row;
+}
+#web_name {
+    font-size: larger;
+    font-weight: 1000;
+    /* margin-top: 6.2%; */
+    margin-left:1em;
+    font-size: 30px;
+}
+#nav_conten {
+    position:absolute;
+    right: 1em;
+    top: 5%;
+}
+
+/* main content */
+#quote_wp {
+    /* for positioning */
+    float: right;
+    right: 3.7em;
+    margin-top: 13em;
+    position: relative;
+}
+
+#quote_wp blockquote {
+    background-color: whitesmoke;
+    color: black;
+    font-size: xx-large;
+    padding: 1.2em;
+    border-radius: 10px;
+}
+
