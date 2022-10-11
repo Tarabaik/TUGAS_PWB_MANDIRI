@@ -1,75 +1,79 @@
-/* for root element */
+/* for root elemet */
 * {
     margin: 0;
-    padding: 0;
-}
-body {
-    background-color: black;
-    color: whitesmoke;
-    font-family: 'Plus Jakarta Sans', sans-serif;
-}
-a {
-    color: white;
-    text-decoration: none;
 }
 li {
-    list-style-type: none;
+    list-style: none;
 }
-/* navbar */
+body {
+    background-color: white;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    color: black;
+}
+
+/* for header */
 nav {
     margin-top: 1em;
 }
-nav ul li{
-    margin-right: 20px;    
+nav a{
+    color: black;
+    text-decoration: none;
 }
-nav ul,#nav_conten {
+nav ul li{
+    margin-right: 20px;  
+    list-style: none;  
+}
+nav ul,#nav_co {
     display: flex; 
     flex-direction: row;
 }
-#web_name {
-    font-size: larger;
-    font-weight: 1000;
-    /* margin-top: 6.2%; */
-    margin-left:1em;
-    font-size: 30px;
-}
-#nav_conten {
-    position:absolute;
-    right: 1em;
-    top: 5%;
+
+#nav_co {
+    right: 0%;
+    position: absolute;
+    top: 1.5em;
 }
 /* for footer */
 footer {
-    background-color: whitesmoke;
-    overflow: auto;
-    height: fit-content;
-}
-#footer-con {
-    position: absolute;
-    color: black;
-    right: 5em;
-}
-footer img {
-    width: 100px;
-    height: auto;
-    position: relative; 
-    left: 1em;   
-    background-color: transparent;
-}
-/* main content */
-#quote_wp {
-    /* for positioning */
-    float: right;
-    right: 3.7em;
-    margin-top: 13em;
+    background-color: black;
+    color: white;
+    display: flex;
+    padding: 5em;
     position: relative;
 }
 
+footer ol {
+    right: 10em;
+    position: absolute;
+    font-size: x-large;
+}
+#fo_name{
+    position:relative;
+    top: 0.4em;
+    font-size: 3em;
+}
+#fo_wrap{
+    top: auto;
+    bottom: auto;
+    left: auto;
+    right: auto;
+    display: flex;
+}
+/* main element */
+main {
+    position: relative;
+}
+#quote_wp {
+    /* for positioning */
+    position: absolute;
+    left: 50%;
+    top: 50%;
+}
+
 #quote_wp blockquote {
-    background-color: whitesmoke;
-    color: black;
+    background-color: black;
+    color: white;
     font-size: xx-large;
     padding: 1.2em;
     border-radius: 10px;
 }
-
