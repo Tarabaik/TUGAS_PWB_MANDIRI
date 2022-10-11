@@ -6,17 +6,18 @@ li {
     list-style: none;
 }
 body {
-    background-color: white;
+    background-color: black;
     font-family: 'Plus Jakarta Sans', sans-serif;
-    color: black;
+    color: white;
 }
 
 /* for header */
 nav {
     margin-top: 1em;
+    
 }
 nav a{
-    color: black;
+    color: white;
     text-decoration: none;
 }
 nav ul li{
@@ -37,13 +38,33 @@ nav ul,#nav_co {
 footer {
     background-color: black;
     color: white;
-    display: flex;
-    padding: 5em;
-    position: relative;
+    padding: 5em 0 5em 0;
 }
+@media only screen and (max-width: 600px){
+    #nav_co {
+        right: 0%;
+        position: absolute;
+        top: 0.1em;
+    }
+    #container1{
+        position: relative;
+        min-height: 100vh;
+    }
+    footer {
+        padding: 5em 0 5em 0;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        width: 100%;
+    }
+    #g_ai{
+        height: 500px;
+        width: auto;
+    }
 
+}
 footer ol {
-    right: 10em;
+    right: 10vh;
     position: absolute;
     font-size: x-large;
 }
@@ -60,20 +81,33 @@ footer ol {
     display: flex;
 }
 /* main element */
-main {
-    position: relative;
+/* side A */
+aside#A_side{
+    background-color: black;
 }
 #quote_wp {
-    /* for positioning */
     position: absolute;
-    left: 50%;
-    top: 50%;
+    width: 25em;
+    top: 20em;
+    right: 1em;
 }
 
 #quote_wp blockquote {
-    background-color: black;
-    color: white;
+    background-color: white;
+    color: black;
     font-size: xx-large;
     padding: 1.2em;
     border-radius: 10px;
+}
+/* side B */
+#B_side{
+    background-color: white;
+    color: black;
+    top: 0%;
+    height: 300px;
+}
+
+#B_side p {
+    width:  500px;
+    font-size: x-large;
 }
